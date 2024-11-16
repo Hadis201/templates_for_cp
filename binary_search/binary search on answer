@@ -1,0 +1,19 @@
+int n, w, h;
+
+bool good(int x){
+    return (number is good?);
+}
+
+void solve(){
+    cin >> w >> h >> n;
+    int lo = 0, hi = 1, ans = 0;
+    while(!good(hi))hi *= 2; // minimum good number
+    while(lo<=hi){
+        int mid = lo+(hi-lo)/2;
+        if(good(mid))hi = mid-1;
+        else lo = mid+1;
+    }
+    cout << hi+1;    
+}
+
+//https://codeforces.com/edu/course/2/lesson/6/2/practice/contest/283932/problem/A
